@@ -7,15 +7,18 @@ import FroalaEditor from 'froala-editor';
   styleUrls: ['./froala-editor.component.scss']
 })
 export class FroalaEditorComponent implements OnInit {
-  editorContent: any;
+  editorContent: any = '';
+  imgObj: any;
   ngOnInit() {
     FroalaEditor.DefineIcon('alert', { NAME: 'info' });
     FroalaEditor.RegisterCommand('alert', {
       title: 'Hello',
+      // focused: false,
+      // undo: true,
+      // refreshAfterCallback: false,
 
       callback: () => {
-
-        alert('Hello!');
+        alert('Hello! This is an alert');
       }
     });
   }
@@ -25,7 +28,17 @@ export class FroalaEditorComponent implements OnInit {
         console.log('Content updated!');
       }
     },
-    toolbarButtons: ['bold', 'italic', 'alert'],
+    toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'insertTable', '|', 'underline', 'paragraphFormat', 'align', 'undo', 'redo', 'html'],
+    // toolbarButtonsXS: [
+    //   'bold', 'italic', 'underline', 'strikeThrough', 'table', '|', 'paragraphFormat', 'align', 'undo', 'redo', 'html'
+    // ],
+    // toolbarButtonsSM: [
+    //   'bold', 'italic', 'underline', 'strikeThrough', 'table', '|', 'paragraphFormat', 'align', 'undo', 'redo', 'html'
+    // ],
+    // toolbarButtonsMD: [
+    //   'bold', 'italic', 'underline', 'strikeThrough', 'table', '|', 'paragraphFormat', 'align', 'undo', 'redo', 'html'
+    // ],
+
   };
 
 
