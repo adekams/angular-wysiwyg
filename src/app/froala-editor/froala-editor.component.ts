@@ -28,7 +28,7 @@ export class FroalaEditorComponent implements OnInit {
         console.log('Content updated!');
       }
     },
-    toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'insertTable', '|', 'underline', 'paragraphFormat', 'align', 'undo', 'redo', 'html'],
+    toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'insertTable', 'insertImage', 'insertLink', 'orderedList', '|', 'underline', 'paragraphFormat', 'align', 'undo', 'redo', 'html'],
     // toolbarButtonsXS: [
     //   'bold', 'italic', 'underline', 'strikeThrough', 'table', '|', 'paragraphFormat', 'align', 'undo', 'redo', 'html'
     // ],
