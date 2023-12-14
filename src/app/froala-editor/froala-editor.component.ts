@@ -29,6 +29,8 @@ export class FroalaEditorComponent implements OnInit {
       }
     },
     toolbarButtons: ['bold', 'italic', 'underline', 'strikeThrough', 'insertTable', 'insertImage', 'insertLink', 'orderedList', '|', 'underline', 'paragraphFormat', 'align', 'undo', 'redo', 'html'],
+
+    // for using different window sizes
     // toolbarButtonsXS: [
     //   'bold', 'italic', 'underline', 'strikeThrough', 'table', '|', 'paragraphFormat', 'align', 'undo', 'redo', 'html'
     // ],
